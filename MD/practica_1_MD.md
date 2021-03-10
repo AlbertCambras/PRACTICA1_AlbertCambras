@@ -4,14 +4,13 @@ Para hacer el código más interactivo y así también aprender, he hecho un men
 
 Cuando subimos el código a la placa ESP32 tenemos que abrir el monitor donde aparecerá el menú de opciones.
 (Si por alguna razón no apareciera este, pulsa el botón RESET).
-Para acceder al modo LED tenemos que pulsar la tecla a y para el otro modo, la tecla b.
 
 Toda la informació recibida tanto por la placa como para el usuario, irá enviada por el puerto Serial, un puerto que efectúa la comunicación entre el ordenador y la placa, en este caso la ESP32.
 
 
 Empezaré explicando la funcion 'elecció' donde está situado nuestro menú.
 
-`var t=1;`
+-- FUNCIÓN ELECCIÓ
 ```cs
 void eleccio(){
   char a;
@@ -39,6 +38,8 @@ void eleccio(){
 }
 
 ```
+Para esta función he usado 'Serial.available()' que finalize solo cuando recibe los datos. Para entender esos datos recibidos, usamos Serial.read() que nos leerá los datos de entrada.
+Si recibe un carácter 'a' nos iremos al modo LED y si ingresamos un carácter 'b' iremos al modo ADC/DAC.
 
 
 ## TRABAJOS Y PREGUNTAS 
