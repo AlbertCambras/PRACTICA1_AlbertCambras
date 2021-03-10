@@ -10,7 +10,7 @@ Toda la informació recibida tanto por la placa como para el usuario, irá envia
 
 Empezaré explicando la funcion 'elecció' donde está situado nuestro menú.
 
--- FUNCIÓN ELECCIÓ
+### FUNCIÓN ELECCIÓ
 ```cs
 void eleccio(){
   char a;
@@ -42,26 +42,10 @@ Para esta función he usado 'Serial.available()' que finalize solo cuando recibe
 Si recibe un carácter 'a' nos iremos al modo LED y si ingresamos un carácter 'b' iremos al modo ADC/DAC.
 
 
-## TRABAJOS Y PREGUNTAS 
 
-1. Generar el programa  y subir el codigo  al github de cada uno 
-2. generar un informe fichero  informe.MD ( markdown  ) donde se muestr el codigo  , un diagrama de flujo y un diagrama de tiempos 
-3. Responder a la siguiente pregunta en el programa que se ha realizado cual es el tiempo libre que tiene el procesador ?
+![]time_diagram.json
 
 
-# EJERCICIOS voluntarios  DE MEJORA DE NOTA
-
-Elejir entre cualquiera de los siguentes 
-
-* leer el valor de un convertidor  A/D  de entrada ; sacarlo por el puerto serie  y sacar el mismo valor  por otro pin  D/A
-
-https://randomnerdtutorials.com/esp32-adc-analog-read-arduino-ide/
-
-* Leer el valor del sensor de temperatura interno y sacarlo por el puerto serie 
-
-el resultado se ha de subir al github de cada uno y realizar un informe .MD 
-
-https://gist.github.com/xxlukas42/7e7e18604f61529b8398f7fcc5785251
 
 
 
