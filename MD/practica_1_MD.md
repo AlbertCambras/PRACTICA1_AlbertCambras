@@ -138,4 +138,4 @@ void adc_dac(){
 
 ### DIAGRAMA DE FLUJO
 
-![DIAGRAMA DE FLUJO](/diagrama.jpg)
+![DIAGRAMA DE FLUJO](diagrama)
