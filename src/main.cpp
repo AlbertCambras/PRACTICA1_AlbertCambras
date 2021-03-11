@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include <ArduinoJson.h>
-int pin_DAC=34;
-int pin_ADC=25;
+int pin_DAC=25;
+int pin_ADC=34;
 int LED=2;
 
 
@@ -28,19 +28,18 @@ void adc_dac(){
         dacWrite(pin_DAC, cont);
         delay(50);
         valor = analogRead(pin_ADC);
+        valor = map(valor, 0, 4096, 0, 255); // EL MAXIM QUE OBTINDRE AL LLEGIR SERA 4096 (2^12), AIXÍ QUE ARA EL 4096 SERÀ 255;
         Serial.println("VALOR:");
         Serial.println(valor);
         delay(100);
-        // Si conectem el pin 25 amb el 32, tindrem que el voltatge del 32 anira variant segons el que treu el pin 25 en analògic.
-        delay(10);
       }
   
 }
 
 
 void coments(){
-    Serial.println("1. LED");
-    Serial.println("2. ADC");
+    Serial.println("a. LED");
+    Serial.println("b. ADC");
 }
 
 void eleccio(){
@@ -71,7 +70,7 @@ void eleccio(){
 void setup() {
   Serial.begin(9600);
   pinMode(LED,OUTPUT);
-
+  analogReadResolution(12); // NO CAL JA QUE VE PER DEFECTE
 }
 
 void loop() {
