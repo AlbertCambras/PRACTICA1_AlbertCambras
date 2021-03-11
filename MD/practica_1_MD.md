@@ -8,7 +8,7 @@ Cuando subimos el código a la placa ESP32 tenemos que abrir el monitor donde ap
 Toda la informació recibida tanto por la placa como para el usuario, irá enviada por el puerto Serial, un puerto que efectúa la comunicación entre el ordenador y la placa, en este caso la ESP32.
 
 
-Para empezar, en el void setup() he declarado el led como una salida, he inicializado el puerto serie y e establecido la resolución del convertidor a 12 bits, más tarde comentaré los problemas que he tenido con la resolución.
+Para empezar, en el void setup() he declarado el led como una salida, he inicializado el puerto serie y he establecido la resolución del convertidor a 12 bits, más tarde comentaré los problemas que he tenido con la resolución.
 
 ### void setup()
 
@@ -64,11 +64,9 @@ void eleccio(){
 }
 
 ```
-Para esta función he usado 'Serial.available()' que finalize solo cuando recibe los datos. Para entender esos datos recibidos, usamos Serial.read() que nos leerá los datos de entrada.
+Para esta función he usado 'Serial.available()' que finaliza solo cuando recibe los datos. Para entender esos datos recibidos, usamos Serial.read() que nos leerá los datos de entrada.
 Si recibe un carácter 'a' nos iremos al modo LED y si ingresamos un carácter 'b' iremos al modo ADC/DAC.
 
-
-La siguiente función es void LED() que se encargará de encender y apagar el LED durante 20 segundos. A la vez que nos envía por el puerto serie cuando este está apagado o encendido.
 
 He creado otra función para que el menú quede ordenado donde en esta irá situada la información sobre las elecciones que se pueden tomar en mi programa. Esta la he llamado coments().
 
@@ -80,6 +78,8 @@ void coments(){
 
 ```
 
+
+La siguiente función es void LED() que se encargará de encender y apagar el LED durante 20 segundos. A la vez que nos envía por el puerto serie cuando este está apagado o encendido.
 
 ### FUNCIÓN LED
 
@@ -136,4 +136,6 @@ void adc_dac(){
 
 
 
+### DIAGRAMA DE FLUJO
 
+![DIAGRAMA DE FLUJO](/diagrama.jpg)
