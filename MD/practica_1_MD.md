@@ -132,7 +132,8 @@ void adc_dac(){
 ```
 
 
-
+### git hub link
+[github_AlbertCambras](https://github.com/AlbertCambras)
 
 
 
@@ -141,4 +142,4 @@ void adc_dac(){
 ![DIAGRAMA DE FLUJO](diagrama.jpg)
 
 ### DIAGRAMA DE TIEMPOS
-![DIAGRAMA DE TIEMPOS](diagramat.jpg)
+![DIAGRAMA DE TIEMPOS](diagramat.JPG)
