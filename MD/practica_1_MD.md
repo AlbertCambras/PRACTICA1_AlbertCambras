@@ -141,4 +141,4 @@ void adc_dac(){
 ![DIAGRAMA DE FLUJO](diagrama.jpg)
 
 ### DIAGRAMA DE TIEMPOS
-![DIAGRAMA DE TIEMPOS](DIAGRAMA_DE_TIEMPOS_1.jpg)
+![DIAGRAMA DE TIEMPOS](diagramat.jpg)
